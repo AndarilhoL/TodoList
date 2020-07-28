@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box
+}
+
+div#app {
+    width: 100vw;
+    height: 100vh;
+
+}
+
+div#lista{
+    height: 85%;
+    margin: 20px;
+}
+
+div#lista ul {
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-gap: 8px;
+
+    justify-content: center;
+}
+
+div#lista ul li{
+    width: 150px;
+    height: 150px;
+    border: 2px solid;
+}
+
+div#botoes{
+    margin: 20px;
+    display: flex;
+    flex: 1;
+
+    justify-content: center;
+}
+
+div#botoes input{
+    background-color: #f1f2f6;
+    padding-left: 40px;
+
+    border-radius: 8px 0 0 8px;
+}
+
+div#botoes button{
+    padding: 0 20px;
+    height: 32px;
+
+    background-color: #2ed573;
+    color: whitesmoke;
+    border-radius: 0 8px 8px 0;
+}
+
+@media(max-width:520px){
+    div#lista ul {
+        list-style: none;
+    
+        display: grid;
+        grid-template-columns: 150px 150px;
+        grid-gap: 5px;
+    
+        justify-content: center;
+    }
+
+}
